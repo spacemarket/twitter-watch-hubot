@@ -1,6 +1,6 @@
 {
   "name": "twitter-watch-hubot",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "author": "ninomiya@spacemarket.co.jp",
   "description": "A simple bot for twitter-result",
