@@ -1,0 +1,60 @@
+{
+  "name": "twitter-watch-hubot",
+  "description": "Watching tweets that mentioned the words you specified.",
+  "repository": "https://github.com/spacemarket/twitter-watch-hubot",
+  "keywords": ["node", "hubot"],
+  "env": {
+    "HUBOT_TWITTER_MENTION_QUERY": {
+      "description": "The search keyword for watching.",
+      "required": true
+    },
+    "HUBOT_TWITTER_MENTION_ROOM": {
+      "description": "The channel name of bot speaking(default `#general`).",
+      "required": false
+    },
+    "HUBOT_SLACK_TOKEN": {
+      "description": "The slack token that can access to the mention room.",
+      "required": true
+    },
+    "HUBOT_TWITTER_ACCESS_TOKEN_KEY": {
+      "description": "The twitter access token key.",
+      "required": true
+    },
+    "HUBOT_TWITTER_ACCESS_TOKEN_SECRET": {
+      "description": "The twitter access token secret.",
+      "required": true
+    },
+    "HUBOT_TWITTER_CONSUMER_KEY": {
+      "description": "The twitter consumer key.",
+      "required": true
+    },
+    "HUBOT_TWITTER_CONSUMER_SECRET": {
+      "description": "The twitter consumer secret.",
+      "required": true
+    },
+    "HUBOT_HEROKU_KEEPALIVE_URL": {
+      "description": "The endpoint for loopback. (https://<App Name>.herokuapp.com/)",
+      "required": true
+    },
+    "TZ": {
+      "description": "The specified timezone. (ex. Asia/Tokyo)",
+      "required": false
+    },
+    "HUBOT_HEROKU_WAKEUP_TIME": {
+      "description": "The time of day (HH:MM) when hubot should wake up. Default: 6:00 (6 am)",
+      "required": false
+    },
+    "HUBOT_HEROKU_SLEEP_TIME": {
+      "description": "The time of day (HH:MM) when hubot should go to sleep. Default: 22:00 (10 pm)",
+      "required": false
+    },
+    "HUBOT_HEROKU_KEEPALIVE_INTERVAL": {
+      "description": "The interval in which to keepalive, in minutes. Default: 5",
+      "required": false
+    }
+  },
+  "addons": [
+    "redistogo",
+    "scheduler:standard"
+  ]
+}

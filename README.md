@@ -8,6 +8,10 @@ Twitter上の特定のキーワードを監視し続け、結果を即座にSlac
 
 ## Getting Started
 
+### Heroku Button
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+### Manual
 1. `git clone git@github.com:spacemarket/twitter-watch-hubot.git && cd twitter-watch-hubot`
 1. `npm install`
 1. `heroku apps:create <app name>`
