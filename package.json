@@ -12,6 +12,6 @@
     "hubot-twitter-search": "^1.0.3"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "6.11.1"
   }
 }
